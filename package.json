@@ -2,7 +2,7 @@
   "name": "create-templating-cli",
   "version": "1.0.0",
   "description": "CLI for generating react/next based templating projects either from default template or any valid project hosted on github.com",
-  "bin":  "dist-esm/index.js",
+  "bin": "dist-esm/index.js",
   "type": "module",
   "main": "dist-cjs/index.js",
   "module": "dist-esm/index.js",
@@ -12,12 +12,10 @@
   },
   "scripts": {
     "copy-assets": "node --experimental-json-modules ./bundler-helpers/copy-assets.js",
-    
     "debug": "node --inspect-brk --experimental-modules --experimental-json-modules ./dist-esm/index.js my-next-app --use-npm --example https://github.com/vercel/next.js/tree/canary --example-path examples/amp-first",
     "debug:v1": "node --inspect-brk --experimental-modules --experimental-json-modules ./dist-esm/index.js my-next-app --use-npm --example https://github.com/kolusamkhan/flight-routes-app",
     "create": "node --experimental-json-modules ./dist-esm/index.js my-next-app",
     "create:dynamic": "node --experimental-json-modules ./dist-esm/index.js my-next-app --use-npm --example y",
-
     "clean": "rimraf ./dist-esm ./dist-cjs",
     "tsc": "tsc  --resolveJsonModule",
     "tsc-cjs": "tsc --p tsconfig-cjs.json --resolveJsonModule",
@@ -72,5 +70,5 @@
     "update-check": "^1.5.4",
     "validate-npm-package-name": "3.0.0"
   },
-  "bundleDependencies":true
+  "bundleDependencies": true
 }

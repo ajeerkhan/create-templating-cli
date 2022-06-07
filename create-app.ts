@@ -12,7 +12,7 @@ import { install } from './helpers/install.js';
 import { getOnline } from './helpers/is-online.js';
 import type { PackageManager } from './helpers/get-pkg-manager.js';
 import { tryGitInit } from './helpers/git.js';
-import { getRepoInfo, hasRepo, RepoInfo, hasExample } from './helpers/examples.js';
+import { getRepoInfo, hasRepo, RepoInfo } from './helpers/examples.js';
 import { downloadAndExtractRepo } from './helpers/examples.js';
 import {DownloadError} from './helpers/download-error.js';
 
