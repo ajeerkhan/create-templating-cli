@@ -17,3 +17,7 @@ CLI for generating react/next based templating projects either from default temp
   node --inspect-brk --experimental-json-modules ./dist-esm/commandar/next-command.js my-next-app --use-npm
 
 
+# Published packages available at  
+https://www.npmjs.com/package/create-templating-cli
+
+
